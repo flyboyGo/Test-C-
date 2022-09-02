@@ -150,11 +150,30 @@ void test02()
     remove.showTvState();
 }
 
+#include "myarray.h"
+
+void test03()
+{
+    //实例化一个数组对象
+    MyArray array = MyArray(5);
+    cout << array.getCapacity() << endl;
+    array.pushBack(1);
+    array.pushBack(2);
+    array.pushBack(3);
+    array.pushBack(4);
+    array.pushBack(5);
+    array.printfArray();
+    array.pushBack(6);
+    array.printfArray();
+}
+
 int main(int argc, char *argv[])
 {
     test01();
 
     test02();
+
+    test03();
 
     return 0;
 }
