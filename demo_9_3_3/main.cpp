@@ -50,6 +50,37 @@ void test05()
     cout << str2.getStrSize() << endl;
 }
 
+void test06()
+{
+    MyString str = MyString("hello ");
+    MyString str2 = MyString("world ");
+    MyString str3 = MyString("again");
+
+    //将str、str2中的字符串拼接成一个全新的对象
+    MyString str4 = str + str2 + str3;
+    cout << str4 << endl;
+
+     MyString str5 = MyString("flight ");
+     MyString str6 = str5 + "again " + "again";
+     cout << str6 << endl;
+
+}
+
+void test07()
+{
+    MyString str = MyString("hello");
+    MyString str2 = MyString("hi");
+    if(str == str2)
+        cout << "相等" << endl;
+    else
+        cout << "不相等" << endl;
+
+    if(str == "yes")
+        cout << "相等" << endl;
+    else
+        cout << "不相等" << endl;
+}
+
 int main(int argc, char *argv[])
 {
     //test01();
@@ -60,7 +91,11 @@ int main(int argc, char *argv[])
 
     //test04();
 
-    test05();
+    //test05();
+
+    //test06();
+
+    test07();
 
     return 0;
 }

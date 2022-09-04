@@ -85,6 +85,56 @@ const char *MyString::operator=(const char * str)
     return str;
 }
 
+//成员函数完成对 +运算符的 重载 实现对象的字符串拼接 并返回新的对象 实现迭代
+MyString MyString::operator+(const MyString &mStr)
+{
+    //为局部对象 必须直接返回实例化 否者函数结束会被释放 外部使用对象接收
+    //也可以添加static 这样可以返回对象引用
+    MyString newStr = MyString();
+    newStr.str = new char[strlen(this->str) + strlen(mStr.str) + 1];
+    newStr.size = this->size + mStr.size;
+
+    memset(newStr.str,0,newStr.size);
+    strcpy(newStr.str,this->str);
+    strcat(newStr.str,mStr.str);
+
+    return newStr;
+}
+
+//成员函数完成对 +运算符的 重载 实现对象与字符串的拼接 并返回新的对象 实现迭代
+MyString MyString::operator+(const char *str)
+{
+    MyString newStr = MyString();
+    newStr.str = new char[strlen(this->str) + strlen(str) + 1];
+    newStr.size = this->size + strlen(str);
+
+    memset(newStr.str,0,newStr.size);
+    strcpy(newStr.str,this->str);
+    strcat(newStr.str,str);
+
+    return newStr;
+}
+
+//成员函数完成对 ==运算符的 重载 实现对象与对象的大小比较 并返回bool
+bool MyString::operator==(const MyString &mStr)
+{
+    if((strcmp(this->str, mStr.str) == 0) && (this->size == mStr.size))
+    {
+        return true;
+    }
+    return false;
+}
+
+//成员函数完成对 ==运算符的 重载 实现对象与字符串的大小比较 并返回bool
+bool MyString::operator==(const char *str)
+{
+    if((strcmp(this->str, str) == 0) && (this->size == strlen(str)))
+      {
+         return true;
+      }
+     return false;
+}
+
 
 //全局普通友元函数完成对 <<运算符的 重载
 ostream& operator<<(ostream &out, MyString &mStr)
