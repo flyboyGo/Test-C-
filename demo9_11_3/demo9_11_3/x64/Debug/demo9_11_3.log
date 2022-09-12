@@ -1,0 +1,6 @@
+﻿  main.cpp
+  main2.cpp
+D:\VisualStudioWorkPlace\demo9_11_3\demo9_11_3\main2.cpp(81,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\VisualStudioWorkPlace\demo9_11_3\demo9_11_3\main2.cpp(133,30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  demo9_11_3.vcxproj -> D:\VisualStudioWorkPlace\demo9_11_3\x64\Debug\demo9_11_3.exe
