@@ -1,0 +1,3 @@
+﻿  main3.cpp
+D:\VisualStudioWorkPlace\demo_9_12_2\demo_9_12_2\main3.cpp(13,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  demo_9_12_2.vcxproj -> D:\VisualStudioWorkPlace\demo_9_12_2\Debug\demo_9_12_2.exe
