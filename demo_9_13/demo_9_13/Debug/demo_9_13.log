@@ -1,0 +1,16 @@
+﻿  main3.cpp
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7080,45): error C2676: 二进制“-”:“const std::_List_unchecked_iterator<std::_List_val<std::_List_simple_types<_Ty>>>”不定义该运算符或到预定义运算符可接收的类型的转换
+          with
+          [
+              _Ty=int
+          ]
+D:\VisualStudioWorkPlace\demo_9_13\demo_9_13\main3.cpp(121): message : 查看对正在编译的函数 模板 实例化“void std::sort<std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,std::list<_Ty,std::allocator<_Ty>>>(const _RanIt,const _RanIt,_Pr)”的引用
+          with
+          [
+              _Ty=int,
+              _RanIt=std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>,
+              _Pr=std::list<int,std::allocator<int>>
+          ]
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7080,5): error C2672: “_Sort_unchecked”: 未找到匹配的重载函数
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7080,1): error C2780: “void std::_Sort_unchecked(_RanIt,_RanIt,iterator_traits<_Iter>::difference_type,_Pr)”: 应输入 4 个参数，却提供了 3 个
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\algorithm(7046): message : 参见“std::_Sort_unchecked”的声明
