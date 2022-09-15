@@ -1,0 +1,59 @@
+﻿  main.cpp
+  main3.cpp
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1455,1): error C3848: 具有类型“const MyGreaterPerson”的表达式会丢失一些 const-volatile 限定符以调用“bool MyGreaterPerson::operator ()(const Person &,const Person &)”
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xutility(1454): message : 查看对正在编译的函数 模板 实例化“bool std::_Debug_lt_pred<const MyGreaterPerson&,const _Kty&,const _Keyty&,0>(_Pr,_Ty1,_Ty2) noexcept(<expr>)”的引用
+          with
+          [
+              _Kty=Person,
+              _Keyty=Person,
+              _Pr=const MyGreaterPerson &,
+              _Ty1=const Person &,
+              _Ty2=const Person &
+          ]
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(999): message : 查看对正在编译的函数 模板 实例化“std::_Tree_find_result<std::_Tree_node<Person,std::_Default_allocator_traits<_Alloc>::void_pointer> *> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Find_lower_bound<_Key>(const _Keyty &) const”的引用
+          with
+          [
+              _Alloc=std::allocator<Person>,
+              _Kty=Person,
+              _Pr=MyGreaterPerson,
+              _Key=Person,
+              _Keyty=Person
+          ]
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1006): message : 查看对正在编译的函数 模板 实例化“std::_Tree_find_result<std::_Tree_node<Person,std::_Default_allocator_traits<_Alloc>::void_pointer> *> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Find_lower_bound<_Key>(const _Keyty &) const”的引用
+          with
+          [
+              _Alloc=std::allocator<Person>,
+              _Kty=Person,
+              _Pr=MyGreaterPerson,
+              _Key=Person,
+              _Keyty=Person
+          ]
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1239): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_Tree_node<Person,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Emplace<Person>(Person &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<Person>,
+              _Kty=Person,
+              _Pr=MyGreaterPerson
+          ]
+D:\program files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xtree(1239): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_Tree_node<Person,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::_Emplace<Person>(Person &&)”的引用
+          with
+          [
+              _Alloc=std::allocator<Person>,
+              _Kty=Person,
+              _Pr=MyGreaterPerson
+          ]
+D:\VisualStudioWorkPlace\demo_9_14\demo_9_14\main3.cpp(89): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<Person>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<false,0>(Person &&)”的引用
+          with
+          [
+              _Kty=Person,
+              _Pr=MyGreaterPerson,
+              _Alloc=std::allocator<Person>
+          ]
+D:\VisualStudioWorkPlace\demo_9_14\demo_9_14\main3.cpp(89): message : 查看对正在编译的函数 模板 实例化“std::pair<std::_Tree_const_iterator<std::_Tree_val<std::_Tree_simple_types<Person>>>,bool> std::_Tree<std::_Tset_traits<_Kty,_Pr,_Alloc,false>>::insert<false,0>(Person &&)”的引用
+          with
+          [
+              _Kty=Person,
+              _Pr=MyGreaterPerson,
+              _Alloc=std::allocator<Person>
+          ]
+  正在生成代码...
